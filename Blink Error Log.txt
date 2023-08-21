@@ -1,0 +1,31 @@
+In file included from C:\Users\jason\OneDrive\Documents\USS Enterprise\Grand Central M4\FastLED\Blink\Blink.ino:5:
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/FastLED.h:665:2: warning: #warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info." [-Wcpp]
+  665 | #warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info."
+      |  ^~~~~~~
+In file included from c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/FastLED.h:75,
+                 from C:\Users\jason\OneDrive\Documents\USS Enterprise\Grand Central M4\FastLED\Blink\Blink.ino:5:
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastspi.h:157:23: note: #pragma message: No hardware SPI pins defined.  All SPI access will default to bitbanged output
+  157 | #      pragma message "No hardware SPI pins defined.  All SPI access will default to bitbanged output"
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/FastLED.h:58,
+                 from C:\Users\jason\OneDrive\Documents\USS Enterprise\Grand Central M4\FastLED\Blink\Blink.ino:5:
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastpin.h: In instantiation of 'class FastPin<51>':
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastspi_bitbang.h:26:49:   required from 'class AVRSoftwareSPIOutput<51, 52, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastspi.h:40:7:   required from 'class SPIOutput<51, 52, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/chipsets.h:169:6:   required from 'class LPD6803Controller<51, 52, RGB, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/FastLED.h:299:77:   required from 'static CLEDController& CFastLED::addLeds(CRGB*, int, int) [with ESPIChipsets CHIPSET = DOTSTAR; unsigned char DATA_PIN = 51; unsigned char CLOCK_PIN = 52; EOrder RGB_ORDER = RGB]'
+C:\Users\jason\OneDrive\Documents\USS Enterprise\Grand Central M4\FastLED\Blink\Blink.ino:59:70:   required from here
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastpin.h:261:24: error: static assertion failed: Invalid pin specified
+  261 |  static_assert(validpin(), "Invalid pin specified");
+      |                ~~~~~~~~^~
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastpin.h: In instantiation of 'class FastPin<52>':
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastspi_bitbang.h:27:50:   required from 'class AVRSoftwareSPIOutput<51, 52, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastspi.h:40:7:   required from 'class SPIOutput<51, 52, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/chipsets.h:169:6:   required from 'class LPD6803Controller<51, 52, RGB, 10>'
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/FastLED.h:299:77:   required from 'static CLEDController& CFastLED::addLeds(CRGB*, int, int) [with ESPIChipsets CHIPSET = DOTSTAR; unsigned char DATA_PIN = 51; unsigned char CLOCK_PIN = 52; EOrder RGB_ORDER = RGB]'
+C:\Users\jason\OneDrive\Documents\USS Enterprise\Grand Central M4\FastLED\Blink\Blink.ino:59:70:   required from here
+c:\Users\jason\OneDrive - Associated Building Supply\Documents\Arduino\libraries\FastLED\src/fastpin.h:261:24: error: static assertion failed: Invalid pin specified
+
+exit status 1
+
+Compilation error: exit status 1
